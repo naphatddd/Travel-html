@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 60px;
+    background: #3498db;
+}
+
+.nav-flex {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul.menu {
+    width: 400px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+ul.menu li a:hover {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+ul.menu li input {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+ul.menu li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+ul.menu li button i {
+    color: #fff;
+    margin-left: 10px;
+}
+
+#banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(./img/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.banner-title h1 {
+    font-size: 5rem;
+    font-family: Roboto;
+}
+
+.banner-title p {
+    margin: 20px 0;
+}
+
+.banner-title .banner-btn {
+    padding: 10px 20px;
+    background: #ff1784;
+    transition: .3s;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.banner-title .banner-btn:hover {
+    background: #333;
+}
+
+#tours {
+    height: 400px;
+}
+
+.tours-title {
+    text-align: center;
+    padding: 30px;
+}
+
+.tours-flex {
+    display: flex;
+}
+
+.tours-flex-items {
+    width: 100%;
+    height: 200px;
+    margin: 0.5rem;
+    position: relative;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.tours-flex-items:hover {
+    transform: translateY(-10px);
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tours-flex-items img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.tours-flex-items h3 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.tours-flex-items .price {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #ff1784;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.tours-flex-items .price:hover {
+    background: #333;
+}
+
+.tours-flex-items figcaption {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+#clients {
+    height: 450px;
+}
+
+.clients-title {
+    text-align: center;
+    padding: 30px;
+}
+
+.client-flex {
+    display: flex;
+}
+
+.client-items {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    transition: .3s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.client-items:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.client-items img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.client-items figcaption {
+    margin-top: 15px;
+}
+
+footer {
+    height: 250px;
+    background: #3498db;
+    color: #fff;
+}
+
+.footer-flex {
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.footer-items {
+    width: 100%;
+    padding: 30px;
+}
+
+.footer-items ul {
+    list-style: none;
+}
+
+.footer-items ul li {
+    margin-top: 10px;
+}
+
+.footer-items ul li i {
+    color: #ff1784;
+    margin-right: 5px;
+}
+
+.footer-items ul,
+.footer-items p {
+    margin-top: 15px;
+}
+
+#about {
+    padding: 20px;
+}
+
+.about-title p {
+    margin: 1rem 0 2rem 0;
+}
+
+#about img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#tours-list {
+    padding-bottom: 3rem;
+}
+
+.tours-list-title {
+    text-align: center;
+    padding: 50px;
+}
+
+.tours-list-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tours-list-items {
+    margin: 1rem;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+    transition: .3s;
+}
+
+.tours-list-items:hover {
+    transform: translateY(-10px);
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tours-list-items img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.tours-list-items .tours-list-price {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    background: #ff1784;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.tours-list-items .tours-list-price:hover {
+    background: #333;
+}
+
+.tours-list-items figcaption {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+#contact {
+    padding-bottom: 2rem;
+}
+
+#contact img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-title {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-form {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-form input {
+    padding: 5px 30px;
+}
+
+.contact-form button {
+    padding: 10px 30px;
+    border: none;
+    margin-left: 15px;
+    background: #3498db;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background: #ff1784;
+}
+
+.contact-img {
+    margin: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        height: auto;
+        padding: 2rem;
+    }
+    .nav-flex {
+        height: auto;
+        flex-direction: column;
+    }
+    ul.menu {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    ul.menu li {
+        margin-top: 1rem;
+    }
+    #banner {
+        height: 50vh;
+    }
+    .banner-title {
+        padding: 1rem;
+    }
+    .banner-title h1 {
+        font-size: 10vw;
+    }
+    #tours {
+        height: auto;
+    }
+    .tours-flex {
+        flex-direction: column;
+    }
+    .tours-flex-items {
+        width: auto;
+    }
+    #clients {
+        height: auto;
+    }
+    .client-flex {
+        flex-direction: column;
+    }
+    .client-items {
+        width: auto;
+        margin: 1rem;
+    }
+    footer {
+        height: auto;
+    }
+    .footer-flex {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .tours-list-flex {
+        flex-direction: column;
+        margin: 10px;
+    }
+}
